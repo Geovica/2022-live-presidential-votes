@@ -15,7 +15,7 @@ function App() {
   }, [presVotes])
 
   const fetchPresVotesData = async () => {
-    const data = await fetch('https://blob-prod-president.abs-cbn.com/feed-2/candidate-results-president.json');
+    const data = await fetch('https://blob-prod-president.abs-cbn.com/feed-14/candidate-results-president.json');
     const apiResponse = await data.json();
     const sortedData = apiResponse.sort((a, b) => a.rank - b.rank)
 
